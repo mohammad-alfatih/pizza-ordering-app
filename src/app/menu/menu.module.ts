@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuItemComponent } from './menu-item/menu-item.component';
+
+import { StoreModule } from '@ngrx/store';
+import { menuReducer } from './store/menu.reducer';
+
+import { MenuItemComponent } from './components/menu-item/menu-item.component';
+import { MenuComponentComponent } from './containers/menu-component/menu-component.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    StoreModule.forFeature('menu', menuReducer)
   ],
-  declarations: [MenuItemComponent]
+  declarations: [MenuItemComponent, MenuComponentComponent]
 })
 export class MenuModule { }
