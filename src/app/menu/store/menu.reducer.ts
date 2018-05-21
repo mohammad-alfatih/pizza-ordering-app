@@ -10,7 +10,7 @@ export interface MenuItem {
   description: string;
   imgUrl: string;
   price: number;
-  status: string;
+  ordered: boolean;
 }
 
 // Entity adapter
