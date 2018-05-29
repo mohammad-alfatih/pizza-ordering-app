@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
+import { RouterModule, Routes } from '@angular/router';
+
 import { CartModule } from './cart/cart.module';
 import { MenuModule } from './menu/menu.module';
 
